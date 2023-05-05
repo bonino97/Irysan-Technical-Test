@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import useFetch from 'hooks/useFetch';
 import { Asteroid } from 'types/Asteroid.interface';
 import { API_URL, NASA_API_KEY } from 'utils/utils';
@@ -6,7 +7,6 @@ import AsteroidsTable from 'components/AsteroidsTable/AsteroidsTable';
 import DateRangePicker from 'components/DateRangePicker/DateRangePicker';
 
 import './AsteroidsList.css';
-import { Link } from 'react-router-dom';
 
 const AsteroidsList: React.FC = () => {
   const [startDate, setStartDate] = useState<string | null>('2021-01-01');

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import useFetch from 'hooks/useFetch';
-import { Asteroid } from 'types/Asteroid.interface';
 import { API_URL, NASA_API_KEY } from 'utils/utils';
+import { Asteroid } from 'types/Asteroid.interface';
 import AsteroidDetails from 'components/AsteroidDetail/AsteroidDetail';
 import './Asteroid.css';
 
