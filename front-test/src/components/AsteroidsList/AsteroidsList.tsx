@@ -6,6 +6,7 @@ import AsteroidsTable from 'components/AsteroidsTable/AsteroidsTable';
 import DateRangePicker from 'components/DateRangePicker/DateRangePicker';
 
 import './AsteroidsList.css';
+import { Link } from 'react-router-dom';
 
 const AsteroidsList: React.FC = () => {
   const [startDate, setStartDate] = useState<string | null>('2021-01-01');
@@ -28,7 +29,12 @@ const AsteroidsList: React.FC = () => {
   }
 
   if (error) {
-    return <p>Error: {error.message}</p>;
+    return (
+      <p>
+        Error: {error.message}
+        <Link to='/'>Back to List</Link>
+      </p>
+    );
   }
 
   if (!data) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import useFetch from 'hooks/useFetch';
 import { Asteroid } from 'types/Asteroid.interface';
 import { API_URL, NASA_API_KEY } from 'utils/utils';
@@ -25,6 +25,7 @@ const AsteroidPage: React.FC = () => {
     return (
       <div className='asteroid-container'>
         <div className='error'>Error: {error.message}</div>
+        <Link to='/'>Back to List</Link>
       </div>
     );
   }
