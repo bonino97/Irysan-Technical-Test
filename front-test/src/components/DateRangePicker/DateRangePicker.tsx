@@ -66,13 +66,7 @@ const DateRangePicker: React.FC<DateRangePickerProps> = ({ onSearch }) => {
         value={endDate ? endDate.format('YYYY-MM-DD') : ''}
         onChange={(e) => setEndDate(moment(e.target.value))}
       />
-      <button onClick={handleSearch}>Search</button>
-
-      {startDate && endDate && (
-        <p className='date-range'>
-          {startDate.format('YYYY-MM-DD')} - {endDate.format('YYYY-MM-DD')}
-        </p>
-      )}
+      <button onClick={handleSearch}>Search Asteroids</button>
 
       {errorMessage && <p className='error-message'>{errorMessage}</p>}
     </div>
