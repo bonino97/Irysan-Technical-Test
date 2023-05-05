@@ -12,7 +12,7 @@ const DateRangePicker: React.FC<DateRangePickerProps> = ({ onSearch }) => {
   const [endDate, setEndDate] = useState<moment.Moment | null>(null);
   const [errorMessage, setErrorMessage] = useState<string>('');
 
-  useMemo(() => {
+  const dateRange = useMemo(() => {
     if (startDate && endDate) {
       const start = startDate.format('YYYY-MM-DD');
       const end = endDate.format('YYYY-MM-DD');
@@ -22,9 +22,9 @@ const DateRangePicker: React.FC<DateRangePickerProps> = ({ onSearch }) => {
   }, [startDate, endDate]);
 
   const handleSearch = () => {
-    if (startDate && endDate) {
-      const start = startDate.format('YYYY-MM-DD');
-      const end = endDate.format('YYYY-MM-DD');
+    if (startDate && endDate && dateRange) {
+      const start = dateRange.start;
+      const end = dateRange.end;
 
       const diffInDays = endDate.diff(startDate, 'days');
       const maxDiffInDays = 7;
@@ -67,6 +67,13 @@ const DateRangePicker: React.FC<DateRangePickerProps> = ({ onSearch }) => {
         onChange={(e) => setEndDate(moment(e.target.value))}
       />
       <button onClick={handleSearch}>Search</button>
+
+      {startDate && endDate && (
+        <p className='date-range'>
+          {startDate.format('YYYY-MM-DD')} - {endDate.format('YYYY-MM-DD')}
+        </p>
+      )}
+
       {errorMessage && <p className='error-message'>{errorMessage}</p>}
     </div>
   );
