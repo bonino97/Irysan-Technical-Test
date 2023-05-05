@@ -7,7 +7,7 @@
 
 You can check the solution in this link:
 
-- https://fantastic-capybara-3f6310.netlify.app/asteroids
+- https://fantastic-capybara-3f6310.netlify.app
 
 # SQL-Irysan-Technical-Test
 
