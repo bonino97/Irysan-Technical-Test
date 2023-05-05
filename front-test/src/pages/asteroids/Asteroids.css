@@ -1,0 +1,13 @@
+.asteroids-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #dfe6e9;
+}
+
+.asteroids-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #2d3436;
+}

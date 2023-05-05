@@ -5,7 +5,9 @@
 
 # FE-Irysan-Technical-Test
 
-- npx create-react-app front --template typescript
+You can check the solution in this link:
+
+- https://fantastic-capybara-3f6310.netlify.app/asteroids
 
 # SQL-Irysan-Technical-Test
 

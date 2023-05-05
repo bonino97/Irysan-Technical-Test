@@ -1,0 +1,21 @@
+.asteroid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.error {
+  font-size: 2rem;
+  color: red;
+}
+
+.back-btn {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}

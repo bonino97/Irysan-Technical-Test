@@ -1,0 +1,32 @@
+.asteroid-details {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.asteroid-details h2 {
+  margin-top: 0;
+}
+
+.asteroid-details p {
+  margin-bottom: 5px;
+}
+
+.asteroid-details strong {
+  font-weight: bold;
+}
+
+.asteroid-details a {
+  color: #0077be;
+  text-decoration: none;
+}
+
+.asteroid-details a:hover {
+  text-decoration: underline;
+}
+
+.asteroid-details a:visited {
+  color: #4b0082;
+}
